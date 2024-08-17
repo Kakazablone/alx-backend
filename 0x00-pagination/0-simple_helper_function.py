@@ -13,14 +13,15 @@ Page numbers are 1-indexed, i.e. the first page is page 1.
 
 from typing import Tuple
 
+
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
     Calculate the start and end index for the items on the specified page.
-    
+
     Args:
         page (int): The page number (1-indexed).
         page_size (int): The number of items per page.
-    
+
     Returns:
         Tuple[int, int]: A tuple containing the start index and the end index.
     """
