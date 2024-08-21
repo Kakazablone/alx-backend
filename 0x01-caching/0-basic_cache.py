@@ -11,6 +11,9 @@ from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """ Class Implementing a basic cache with
+    no size limit
+    """
 
     def put(self, key, item):
         """Add an item to the cache.
