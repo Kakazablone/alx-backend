@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
+"""BasicCache is a caching system that inherits from BaseCaching.
+This class implements a basic cache with no size limit. Items are stored
+in a dictionary and can be retrieved by their keys. If a key or item is
+None, the put method will do nothing. The get method will return the
+associated value for a given key or None if the key doesn't exist.
+"""
+
+
 from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """BasicCache is a caching system that inherits from BaseCaching.
-
-    This class implements a basic cache with no size limit. Items are stored
-    in a dictionary and can be retrieved by their keys. If a key or item is
-    None, the put method will do nothing. The get method will return the
-    associated value for a given key or None if the key doesn't exist.
-    """
 
     def put(self, key, item):
         """Add an item to the cache.
