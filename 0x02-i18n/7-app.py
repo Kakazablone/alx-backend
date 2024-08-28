@@ -80,6 +80,7 @@ def get_locale():
 
 # babel.init_app(app, locale_selector=get_locale)
 
+
 @babel.timezoneselector
 def get_timezone():
     """
